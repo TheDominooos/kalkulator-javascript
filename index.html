@@ -12,7 +12,7 @@
         }
         #display{
             height:120px;
-            width:25%;
+            width:50%;
             font-size:100px;
             border-style: solid;
             text-align: right;
@@ -26,23 +26,23 @@
         
     </div>
     <div>
-        <input type="button" value="7" onclick=/>
-        <input type="button" value="8" onclick=/>
-        <input type="button" value="9" onclick=/>
-        <input type="button" value="+" onclick=/>
-        <input type="button" value="−" onclick=/>
+        <input type="button" value="7" onclick='numberButton(7)'/>
+        <input type="button" value="8" onclick='numberButton(8)'/>
+        <input type="button" value="9" onclick='numberButton(9)'/>
+        <input type="button" value="+" onclick='operationButton("+")'/>
+        <input type="button" value="−" onclick='operationButton("-")'/>
         <br>
-        <input type="button" value="4" onclick=/>
-        <input type="button" value="5" onclick=/>
-        <input type="button" value="6" onclick=/>
-        <input type="button" value="×" onclick=/>
-        <input type="button" value="÷" onclick=/>
+        <input type="button" value="4" onclick='numberButton(4)'/>
+        <input type="button" value="5" onclick='numberButton(5)'/>
+        <input type="button" value="6" onclick='numberButton(6)'/>
+        <input type="button" value="×" onclick='operationButton("*")'/>
+        <input type="button" value="÷" onclick='operationButton("/")'/>
         <br>
-        <input type="button" value="1" onclick=/>
-        <input type="button" value="2" onclick=/>
-        <input type="button" value="3" onclick=/>
-        <input type="button" value="=" onclick=calculateResult()/> 
-        <input type="button" value="AC" onclick=/> 
+        <input type="button" value="1" onclick='numberButton(1)'/>
+        <input type="button" value="2" onclick='numberButton(2)'/>
+        <input type="button" value="3" onclick='numberButton(3)'/>
+        <input type="button" value="=" onclick='calculateResult()'/> 
+        <input type="button" value="AC" onclick='resetCalculator(); updateDisplay()'/> 
     </div>
 
 </body>
