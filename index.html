@@ -9,6 +9,7 @@
     <style>
         input{
             font-size:100px;
+            width:10%
         }
         #display{
             height:120px;
@@ -18,6 +19,10 @@
             text-align: right;
             padding-left:10px;
             padding-right:10px;
+            overflow-x:auto;
+        }
+        #button2{
+            width:30%;
         }
     </style>
 </head>
@@ -42,7 +47,8 @@
         <input type="button" value="2" onclick='numberButton(2)'/>
         <input type="button" value="3" onclick='numberButton(3)'/>
         <input type="button" value="=" onclick='calculateResult()'/> 
-        <input type="button" value="AC" onclick='resetCalculator(); updateDisplay()'/> 
+        <input type="button" value="AC" onclick='resetCalculator(); updateDisplay()'/><br> 
+        <input id="button2" type="button" value="0" onclick='numberButton(0)'/>
     </div>
 
 </body>
